@@ -1,0 +1,75 @@
+.boardWrapper {  
+  background-color: rgba(227, 63, 63, 0.196);
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+  border: 1px solid black;
+  /* margin-bottom: 20px; */
+  /* flex-wrap: wrap;  */
+  display: flex; 
+  
+  
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.required::after {
+  content: '*';
+  font-size: 11px;
+  color: red;
+}
+
+form dl dt{ 
+  width: 165px;
+  float:left;
+  clear:both;
+}
+
+.area {
+  width: 500px;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.tab_class {
+  width: calc(100%/5);
+  height: 50px;
+  background-color: darkgrey;
+  line-height: 50px;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  float: left;
+  order: -1;
+}
+ 
+input[name="tab_name"] {
+  display: none;
+}
+
+input:checked + .tab_class {
+  background-color: cadetblue;
+  color: aliceblue;
+}
+ 
+.content_class {
+  display: none;
+  width: 100%;
+}
+ 
+input:checked + .tab_class + .content_class {
+  display: block;
+}
+
+.box_scroll {
+  /* height: 7em;     */
+  overflow: scroll;
+  overflow-x: hidden;
+  padding:10px;
+  border: solid 1px #747474; 
+  background-color:#FBF2C3; 
+  }
